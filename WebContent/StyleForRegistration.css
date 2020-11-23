@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(1.jpg);	
+	background-size: cover;
+	background-position: center
+}
+
+
+.body
+{
+	margin:0;
+	padding:0;
+	font-family:serif;
+}
+
+ul.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.nav-bar li {float: left;}
+
+ul.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav-bar li a:hover:not(.active) {background-color: #4CAF50;}
+
+ul.nav-bar li a.active {background-color: #4CAF50;}
+
+ul.nav-bar li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.nav-bar li.right, 
+    ul.nav-bar li {float: none;}
+}
+
+.registration
+{
+	
+	background: rgba(0,0,0,0.5);
+	background-color:#333;
+	width:320px;
+	height:600px;
+	border-radius: 20px;
+	top: 55%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing:border-box;
+	padding: 70px 30px;
+}
+
+h1
+{
+	margin:0;
+	padding:0 0 20px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	font-family:serif;
+}
+
+.registration p
+{
+	margin:0;
+	padding:0;
+	font-weight:;
+	color:white;
+	font-family:serif;
+}
+
+.registration input
+{
+	width: 100%;
+	margin-bottom:20px;
+}
+
+.registration input[type="text"], input[type="password"], input[type="email"], input[type="password"]
+{
+	border:none;
+	border-bottom:1px solid #fff;
+	background: white;
+	outline: none;
+	height:35px;
+	color: black;
+	font-size:16px;
+	border-radius:10px;
+}
+
+.registration input[type= "submit"]
+{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#4CAF50;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+
+.registration input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#1c8adb ;
+	color:white;
+}
+
+.registration a
+{
+	text-decoration:none;
+	font-size:14px;
+	color:white;
+}
+
+
+.footer{
+	background-color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-top:750px;
+}
+

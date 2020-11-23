@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd" >
+<beans>
+
+	<bean name="/register.spring" class="com.MallNearMe.Controller.CustomerController" />
+	<bean name="/ContactUs.spring" class="com.MallNearMe.Controller.ContactUsController" />
+	<bean name="/SearchMall.spring" class="com.MallNearMe.Controller.SearchMall" />
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/</value>
+		</property>
+
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	
+</beans>

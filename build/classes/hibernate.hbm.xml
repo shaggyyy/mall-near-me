@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.MallNearMe.pojo.Customer" table="Customer">
+		<id name="cid">
+			<generator class="native" />
+		</id>
+		<property name="cname">
+			<column name="cname"></column>
+		</property>
+
+		<property name="cuname">
+			<column name="cuname"></column>
+		</property>
+
+		<property name="cpassword">
+			<column name="cpassword"></column>
+		</property>
+
+		<property name="email">
+			<column name="email"></column>
+		</property>
+
+		<property name="contact">
+			<column name="contact"></column>
+		</property>
+
+		<property name="role">
+			<column name="role"></column>
+		</property>
+	</class>
+	
+		<class name="com.MallNearMe.pojo.ContactUs" table="ContactUs">
+		<id name="contactid">
+			<generator class="increment" />
+		</id>
+		<property name="contactname">
+			<column name="contactname"></column>
+		</property>
+
+		<property name="contactemail">
+			<column name="contactemail"></column>
+		</property>
+
+		<property name="contactcno">
+			<column name="contactcno"></column>
+		</property>
+
+		<property name="contactmessage">
+			<column name="contactmessage"></column>
+		</property>
+	</class>
+	
+	<class name="com.MallNearMe.pojo.Mall" table="Malls">
+		<id name="MallId">
+			<generator class="increment" />
+		</id>
+		<property name="MallName">
+			<column name="MallName"></column>
+		</property>
+
+		<property name="Locality">
+			<column name="Locality"></column>
+		</property>
+
+		<property name="A">
+			<column name="A"></column>
+		</property>
+
+		<property name="B">
+			<column name="B"></column>
+		</property>
+	</class>
+	
+</hibernate-mapping>
